@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Simple form validation</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form action="/cgi-bin/test.cgi" method="post" onsubmit="return(validate())" id="myForm" name="myForm">
+        <table>
+            <th>Registration form validation</th>
+            <tr>
+                <td>
+                    Name: <input type="text" placeholder="Enter name" id="Name" name="Name">
+                </td>
+            </tr>
+            <td>
+               Email: <input type="email" placeholder="Email here" id="email" name="email">
+            </td>
+        </tr>
+        <td>
+            Zip code: <input type="number" placeholder="Zip code" name="Zipcode">
+        </td>
+    </tr>
+    <td>
+        country: <select name="country"  id="country">
+            <option value="-1">[choose yours]</option>
+            <option value="1">Nigeria</option>
+            <option value="2">USA</option>
+        </select>
+    </td>
+  </tr>
+</tr>
+<td>
+    <input type="button" value="Submit">
+</td>
+</tr> 
+        </table>
+    </form>
+</body>
+</html>
